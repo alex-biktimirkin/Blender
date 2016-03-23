@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Dow.Intune.UI
+namespace Dow.Intune.Views
 {
     /// <summary>
-    /// Interaction logic for SelectionScreen4.xaml
+    /// Interaction logic for SelectionScreen2.xaml
     /// </summary>
-    public partial class SelectionScreen4 : UserControl
+    public partial class SelectionScreen2 : UserControl
     {
-        public SelectionScreen4()
+        public SelectionScreen2()
         {
             InitializeComponent();
         }

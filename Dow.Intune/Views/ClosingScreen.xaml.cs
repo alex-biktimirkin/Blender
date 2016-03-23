@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Dow.Intune.UI
+namespace Dow.Intune.Views
 {
     /// <summary>
     /// Interaction logic for ClosingScreen.xaml

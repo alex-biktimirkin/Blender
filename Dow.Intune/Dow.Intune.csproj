@@ -59,41 +59,41 @@
     <Compile Include="Services\Events.cs" />
     <Compile Include="Services\ScreenNavigation.cs" />
     <Compile Include="Services\PropertyExtractor.cs" />
-    <Compile Include="UI\ClosingScreen.xaml.cs">
+    <Compile Include="Views\ClosingScreen.xaml.cs">
       <DependentUpon>ClosingScreen.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\FirstScreen.xaml.cs">
+    <Compile Include="Views\FirstScreen.xaml.cs">
       <DependentUpon>FirstScreen.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\ResultsScreen1.xaml.cs">
+    <Compile Include="Views\ResultsScreen1.xaml.cs">
       <DependentUpon>ResultsScreen1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\ResultsScreen2.xaml.cs">
+    <Compile Include="Views\ResultsScreen2.xaml.cs">
       <DependentUpon>ResultsScreen2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\ResultsScreen3.xaml.cs">
+    <Compile Include="Views\ResultsScreen3.xaml.cs">
       <DependentUpon>ResultsScreen3.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\ScreenSaver.xaml.cs">
+    <Compile Include="Views\ScreenSaver.xaml.cs">
       <DependentUpon>ScreenSaver.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\SelectionScreen1.xaml.cs">
+    <Compile Include="Views\SelectionScreen1.xaml.cs">
       <DependentUpon>SelectionScreen1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\SelectionScreen2.xaml.cs">
+    <Compile Include="Views\SelectionScreen2.xaml.cs">
       <DependentUpon>SelectionScreen2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\SelectionScreen3.xaml.cs">
+    <Compile Include="Views\SelectionScreen3.xaml.cs">
       <DependentUpon>SelectionScreen3.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\SelectionScreen4.xaml.cs">
+    <Compile Include="Views\SelectionScreen4.xaml.cs">
       <DependentUpon>SelectionScreen4.xaml</DependentUpon>
     </Compile>
     <Compile Include="Commands\DelegateCommand.cs" />
     <Compile Include="ViewModels\Base\NavigatingViewModelBase.cs" />
     <Compile Include="ViewModels\FirstScreenViewModel.cs" />
     <Compile Include="ViewModels\Base\ViewModelBase.cs" />
-    <Page Include="UI\MainWindow.xaml">
+    <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -103,47 +103,47 @@
     </Compile>
     <Compile Include="Enums\Screen.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
-    <Compile Include="UI\MainWindow.xaml.cs">
+    <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="UI\ClosingScreen.xaml">
+    <Page Include="Views\ClosingScreen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\FirstScreen.xaml">
+    <Page Include="Views\FirstScreen.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UI\ResultsScreen1.xaml">
+    <Page Include="Views\ResultsScreen1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\ResultsScreen2.xaml">
+    <Page Include="Views\ResultsScreen2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\ResultsScreen3.xaml">
+    <Page Include="Views\ResultsScreen3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\ScreenSaver.xaml">
+    <Page Include="Views\ScreenSaver.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\SelectionScreen1.xaml">
+    <Page Include="Views\SelectionScreen1.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UI\SelectionScreen2.xaml">
+    <Page Include="Views\SelectionScreen2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\SelectionScreen3.xaml">
+    <Page Include="Views\SelectionScreen3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\SelectionScreen4.xaml">
+    <Page Include="Views\SelectionScreen4.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

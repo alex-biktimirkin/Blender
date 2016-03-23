@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Dow.Intune.Enums;
+using Dow.Intune.Models.Interfaces;
+using Dow.Intune.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,16 +16,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Dow.Intune.UI
+namespace Dow.Intune.Views
 {
     /// <summary>
-    /// Interaction logic for ScreenSaver.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class ScreenSaver : UserControl
+    public partial class MainWindow : Window
     {
-        public ScreenSaver()
+        private MainViewModel viewModel;
+
+        public MainWindow(INavigationModel navigationModel)
         {
             InitializeComponent();
+
+            viewModel = new MainViewModel(navigationModel);
+            this.DataContext = viewModel;
         }
     }
 }

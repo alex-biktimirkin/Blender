@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Dow.Intune.UI
+namespace Dow.Intune.Views
 {
     /// <summary>
-    /// Interaction logic for ResultsScreen2.xaml
+    /// Interaction logic for ScreenSaver.xaml
     /// </summary>
-    public partial class ResultsScreen2 : UserControl
+    public partial class ScreenSaver : UserControl
     {
-        public ResultsScreen2()
+        public ScreenSaver()
         {
             InitializeComponent();
         }

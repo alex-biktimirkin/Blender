@@ -1,7 +1,4 @@
-﻿using Dow.Intune.Enums;
-using Dow.Intune.Models.Interfaces;
-using Dow.Intune.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Dow.Intune.UI
+namespace Dow.Intune.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ResultsScreen3.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ResultsScreen3 : UserControl
     {
-        private MainViewModel viewModel;
-
-        public MainWindow(INavigationModel navigationModel)
+        public ResultsScreen3()
         {
             InitializeComponent();
-
-            viewModel = new MainViewModel(navigationModel);
-            this.DataContext = viewModel;
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿using Dow.Intune.Models;
-using Dow.Intune.UI;
+using Dow.Intune.Views;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
