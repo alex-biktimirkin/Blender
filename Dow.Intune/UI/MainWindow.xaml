@@ -1,0 +1,31 @@
+﻿<Window x:Class="Dow.Intune.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:conv="clr-namespace:Dow.Intune.Converters"
+        xmlns:enum="clr-namespace:Dow.Intune.Enums"
+        xmlns:ui="clr-namespace:Dow.Intune.UI"
+        Title="INTUNE"
+        Width="525"
+        Height="350"
+        ResizeMode="NoResize"
+        Topmost="True"
+        WindowState="Maximized"
+        WindowStyle="None">
+
+    <Window.Resources>
+        <conv:ScreenToVisibilityConverter x:Key="ScreenToVisibilityConverter" />
+    </Window.Resources>
+
+    <Grid>
+        <ui:ScreenSaver Visibility="{Binding CurrentScreen, Mode=OneWay, Converter={StaticResource ScreenToVisibilityConverter}, ConverterParameter={x:Static enum:Screen.ScreenSaver}}" />
+        <ui:FirstScreen Visibility="{Binding CurrentScreen, Mode=OneWay, Converter={StaticResource ScreenToVisibilityConverter}, ConverterParameter={x:Static enum:Screen.FirstScreen}}" />
+        <ui:SelectionScreen1 Visibility="{Binding CurrentScreen, Mode=OneWay, Converter={StaticResource ScreenToVisibilityConverter}, ConverterParameter={x:Static enum:Screen.SelectionScreen1}}" />
+        <ui:SelectionScreen2 Visibility="{Binding CurrentScreen, Mode=OneWay, Converter={StaticResource ScreenToVisibilityConverter}, ConverterParameter={x:Static enum:Screen.SelectionScreen2}}" />
+        <ui:SelectionScreen3 Visibility="{Binding CurrentScreen, Mode=OneWay, Converter={StaticResource ScreenToVisibilityConverter}, ConverterParameter={x:Static enum:Screen.SelectionScreen3}}" />
+        <ui:SelectionScreen4 Visibility="{Binding CurrentScreen, Mode=OneWay, Converter={StaticResource ScreenToVisibilityConverter}, ConverterParameter={x:Static enum:Screen.SelectionScreen4}}" />
+        <ui:ResultsScreen1 Visibility="{Binding CurrentScreen, Mode=OneWay, Converter={StaticResource ScreenToVisibilityConverter}, ConverterParameter={x:Static enum:Screen.ResultsScreen1}}" />
+        <ui:ResultsScreen2 Visibility="{Binding CurrentScreen, Mode=OneWay, Converter={StaticResource ScreenToVisibilityConverter}, ConverterParameter={x:Static enum:Screen.ResultsScreen2}}" />
+        <ui:ResultsScreen3 Visibility="{Binding CurrentScreen, Mode=OneWay, Converter={StaticResource ScreenToVisibilityConverter}, ConverterParameter={x:Static enum:Screen.ResultsScreen3}}" />
+        <ui:ClosingScreen Visibility="{Binding CurrentScreen, Mode=OneWay, Converter={StaticResource ScreenToVisibilityConverter}, ConverterParameter={x:Static enum:Screen.ClosingScreen}}" />
+    </Grid>
+</Window>

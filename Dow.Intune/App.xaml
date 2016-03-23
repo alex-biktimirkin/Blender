@@ -1,0 +1,9 @@
+﻿<Application x:Class="Dow.Intune.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <BitmapImage x:Key="DowLogo" UriSource="Assets/Images/dow_logo.png" />
+        <BitmapImage x:Key="IntuneLogoSmall" UriSource="Assets/Images/intune_logo_small.png" />
+        <BitmapImage x:Key="IntuneLogoLarge" UriSource="Assets/Images/intune_logo_large.png" />
+    </Application.Resources>
+</Application>
