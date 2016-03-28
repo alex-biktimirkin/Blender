@@ -33,7 +33,9 @@ namespace Dow.Intune.Views
         {
             InitializeComponent();
 
-            if (!DesignerProperties.GetIsInDesignMode(this))
+            if (DesignerProperties.GetIsInDesignMode(this))
+                ViewModel = new SelectionScreen1ViewModel();
+            else
                 ViewModel = App.Container.Resolve<SelectionScreen1ViewModel>();
         }
     }

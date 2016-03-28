@@ -16,6 +16,10 @@ namespace Dow.Intune.ViewModels.Base
         public DelegateCommand GoNext { get; private set; }
         public DelegateCommand GoBack { get; private set; }
 
+        public NavigationViewModelBase()
+        {
+        }
+
         public NavigationViewModelBase(INavigationModel navigationModel)
         {
             this.navigationModel = navigationModel;

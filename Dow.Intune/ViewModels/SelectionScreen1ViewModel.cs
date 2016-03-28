@@ -10,6 +10,10 @@ namespace Dow.Intune.ViewModels
 {
     public class SelectionScreen1ViewModel : NavigationViewModelBase
     {
+        public SelectionScreen1ViewModel()
+        {
+        }
+
         public SelectionScreen1ViewModel(INavigationModel navigationModel)
             : base(navigationModel)
         {

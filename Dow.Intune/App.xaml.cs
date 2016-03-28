@@ -56,6 +56,7 @@ namespace Dow.Intune
 
         private void RegisterViewModels()
         {
+            Container.RegisterType<MainWindowViewModel>();
             Container.RegisterType<ScreenSaverViewModel>();
             Container.RegisterType<FirstScreenViewModel>();
             Container.RegisterType<SelectionScreen1ViewModel>();
@@ -70,6 +71,7 @@ namespace Dow.Intune
 
         private void RegisterViews()
         {
+            Container.RegisterType<MainWindow>();
             Container.RegisterType<ScreenSaver>();
             Container.RegisterType<FirstScreen>();
             Container.RegisterType<SelectionScreen1>();

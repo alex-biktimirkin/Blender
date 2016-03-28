@@ -10,6 +10,10 @@ namespace Dow.Intune.ViewModels
 {
     public class FirstScreenViewModel : NavigationViewModelBase
     {
+        public FirstScreenViewModel()
+        {
+        }
+
         public FirstScreenViewModel(INavigationModel navigationModel)
             : base(navigationModel)
         {

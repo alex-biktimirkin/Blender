@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace Dow.Intune.ViewModels
 {
-    public class MainViewModel : ViewModelBase
+    public class MainWindowViewModel : ViewModelBase
     {
         private readonly INavigationModel navigationModel;
 
-        public MainViewModel(INavigationModel navigationModel)
+        public MainWindowViewModel(INavigationModel navigationModel)
         {
             this.navigationModel = navigationModel;
 

@@ -25,13 +25,13 @@ namespace Dow.Intune.Views
     /// </summary>
     public partial class MainWindow : Window
     {
-        private MainViewModel ViewModel
+        private MainWindowViewModel ViewModel
         {
-            get { return (MainViewModel)DataContext; }
+            get { return (MainWindowViewModel)DataContext; }
             set { this.DataContext = value; }
         }
 
-        public MainWindow(MainViewModel viewModel)
+        public MainWindow(MainWindowViewModel viewModel)
         {
             InitializeComponent();
 
