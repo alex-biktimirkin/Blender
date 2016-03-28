@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dow.Intune.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Practices.Unity;
+using System.ComponentModel;
 
 namespace Dow.Intune.Views
 {
@@ -20,9 +23,18 @@ namespace Dow.Intune.Views
     /// </summary>
     public partial class SelectionScreen1 : UserControl
     {
+        private SelectionScreen1ViewModel ViewModel
+        {
+            get { return (SelectionScreen1ViewModel)DataContext; }
+            set { DataContext = value; }
+        }
+        
         public SelectionScreen1()
         {
             InitializeComponent();
+
+            if (!DesignerProperties.GetIsInDesignMode(this))
+                ViewModel = App.Container.Resolve<SelectionScreen1ViewModel>();
         }
     }
 }

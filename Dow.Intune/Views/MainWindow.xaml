@@ -8,7 +8,6 @@
         Width="525"
         Height="350"
         ResizeMode="NoResize"
-        Topmost="True"
         WindowState="Maximized"
         WindowStyle="None">
 

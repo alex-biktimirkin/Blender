@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Dow.Intune.ViewModels
 {
-    public class FirstScreenViewModel : NavigationViewModelBase
+    public class ClosingScreenViewModel : NavigationViewModelBase
     {
-        public FirstScreenViewModel(INavigationModel navigationModel)
+        public ClosingScreenViewModel(INavigationModel navigationModel)
             : base(navigationModel)
         {
         }

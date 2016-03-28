@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Dow.Intune.Services
 {
-    public static class ScreenNavigation
+    public static class ScreenSequence
     {
         public static Screen FirstScreen()
         {
@@ -19,7 +19,7 @@ namespace Dow.Intune.Services
             return Enum.GetValues(typeof(Screen)).Cast<Screen>().Last();
         }
 
-        public static Screen? NextScreenOrDefault(this Screen screen)
+        public static Screen? NextScreenOrDefault(Screen screen)
         {
             if (screen == LastScreen())
                 return null;
@@ -27,7 +27,7 @@ namespace Dow.Intune.Services
             return Enum.GetValues(typeof(Screen)).Cast<Screen>().FirstOrDefault(x => (int)x > (int)screen);
         }
 
-        public static Screen? PrevScreenOrDefault(this Screen screen)
+        public static Screen? PrevScreenOrDefault(Screen screen)
         {
             if (screen == FirstScreen())
                 return null;

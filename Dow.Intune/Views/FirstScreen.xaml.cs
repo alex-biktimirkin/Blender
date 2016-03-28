@@ -10,10 +10,13 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Markup;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Practices.Unity;
+using System.ComponentModel;
 
 namespace Dow.Intune.Views
 {
@@ -22,14 +25,18 @@ namespace Dow.Intune.Views
     /// </summary>
     public partial class FirstScreen : UserControl
     {
-        private FirstScreenViewModel viewModel;
+        private FirstScreenViewModel ViewModel
+        {
+            get { return (FirstScreenViewModel)DataContext; }
+            set { DataContext = value; }
+        }
 
-        public FirstScreen(INavigationModel navigationModel)
+        public FirstScreen()
         {
             InitializeComponent();
 
-            this.viewModel = new FirstScreenViewModel(navigationModel);
-            this.DataContext = viewModel;
+            if (!DesignerProperties.GetIsInDesignMode(this))
+                ViewModel = App.Container.Resolve<FirstScreenViewModel>();
         }
     }
 }

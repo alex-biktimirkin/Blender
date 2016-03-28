@@ -15,7 +15,7 @@ namespace Dow.Intune.Models
 
         public NavigationModel()
         {
-            this.CurrentScreen = ScreenNavigation.FirstScreen();
+            CurrentScreen = ScreenSequence.FirstScreen();
         }
 
         public Screen CurrentScreen
@@ -27,7 +27,7 @@ namespace Dow.Intune.Models
                     return;
 
                 this.currentScreen = value;
-                Events.Fire(ScreenChanged, this.CurrentScreen);
+                Events.Fire(ScreenChanged, CurrentScreen);
             }
         }
 
@@ -35,16 +35,16 @@ namespace Dow.Intune.Models
 
         public void NavigateToNextScreen()
         {
-            var nextScreen = this.CurrentScreen.NextScreenOrDefault();
+            var nextScreen = ScreenSequence.NextScreenOrDefault(CurrentScreen);
             if (nextScreen.HasValue)
-                this.CurrentScreen = nextScreen.Value;
+                CurrentScreen = nextScreen.Value;
         }
 
         public void NavigateToPrevScreen()
         {
-            var prevScreen = this.CurrentScreen.PrevScreenOrDefault();
+            var prevScreen = ScreenSequence.PrevScreenOrDefault(CurrentScreen);
             if (prevScreen.HasValue)
-                this.CurrentScreen = prevScreen.Value;
+                CurrentScreen = prevScreen.Value;
         }
     }
 }

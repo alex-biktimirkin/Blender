@@ -15,6 +15,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Practices.Unity;
+using System.Windows.Markup;
 
 namespace Dow.Intune.Views
 {
@@ -23,14 +25,17 @@ namespace Dow.Intune.Views
     /// </summary>
     public partial class MainWindow : Window
     {
-        private MainViewModel viewModel;
+        private MainViewModel ViewModel
+        {
+            get { return (MainViewModel)DataContext; }
+            set { this.DataContext = value; }
+        }
 
-        public MainWindow(INavigationModel navigationModel)
+        public MainWindow(MainViewModel viewModel)
         {
             InitializeComponent();
 
-            viewModel = new MainViewModel(navigationModel);
-            this.DataContext = viewModel;
+            ViewModel = viewModel;
         }
     }
 }

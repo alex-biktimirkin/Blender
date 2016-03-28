@@ -8,11 +8,7 @@ using System.Threading.Tasks;
 
 namespace Dow.Intune.ViewModels
 {
-    public class FirstScreenViewModel : NavigationViewModelBase
+    public class ScreenSaverViewModel : ViewModelBase
     {
-        public FirstScreenViewModel(INavigationModel navigationModel)
-            : base(navigationModel)
-        {
-        }
     }
 }

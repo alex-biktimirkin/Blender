@@ -13,11 +13,13 @@ namespace Dow.Intune.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {
-        private INavigationModel navigationModel;
+        private readonly INavigationModel navigationModel;
 
         public MainViewModel(INavigationModel navigationModel)
         {
             this.navigationModel = navigationModel;
+
+            this.navigationModel.ScreenChanged += _ => RaisePropertyChanged(() => CurrentScreen);
         }
 
         public Screen CurrentScreen
