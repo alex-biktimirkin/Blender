@@ -29,14 +29,10 @@ namespace Dow.Intune.Views
             set { DataContext = value; }
         }
         
-        public SelectionScreen1()
+        public SelectionScreen1(SelectionScreen1ViewModel viewModel)
         {
             InitializeComponent();
-
-            if (DesignerProperties.GetIsInDesignMode(this))
-                ViewModel = new SelectionScreen1ViewModel();
-            else
-                ViewModel = App.Container.Resolve<SelectionScreen1ViewModel>();
+            ViewModel = viewModel;
         }
     }
 }

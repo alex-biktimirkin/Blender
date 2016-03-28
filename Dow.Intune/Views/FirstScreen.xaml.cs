@@ -31,14 +31,10 @@ namespace Dow.Intune.Views
             set { DataContext = value; }
         }
 
-        public FirstScreen()
+        public FirstScreen(FirstScreenViewModel viewModel)
         {
             InitializeComponent();
-
-            if (DesignerProperties.GetIsInDesignMode(this))
-                ViewModel = new FirstScreenViewModel();
-            else
-                ViewModel = App.Container.Resolve<FirstScreenViewModel>();
+            ViewModel = viewModel;
         }
     }
 }
